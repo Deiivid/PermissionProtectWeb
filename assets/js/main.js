@@ -245,7 +245,12 @@
       clickable: true
     }
   });
-
+  window.addEventListener("hashchange", function() {
+    if (window.location.hash === "#privacy-policy") {
+      // Realiza alguna acción, como analytics o registro.
+      console.log("Navegado a la política de privacidad");
+    }
+  });
   /**
    * Initiate Pure Counter 
    */
